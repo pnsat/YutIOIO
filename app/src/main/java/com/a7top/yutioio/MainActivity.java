@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import ioio.lib.util.BaseIOIOLooper;
+import ioio.lib.util.android.IOIOActivity;
+
+public class MainActivity extends IOIOActivity implements View.OnClickListener {
 
     private Button button;
 
@@ -26,6 +29,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     } //Main Medtrod
+
+    class Looper extends BaseIOIOLooper {
+
+
+
+    }  // Looper Class
+
+
 
     private void initialView() {
 
